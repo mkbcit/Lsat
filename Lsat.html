@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lsat | Home</title>
+<link rel="shortcut icon" href="icon1.png">
+<link href="Lsatv1.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+	a:link    {color:#BCC0BB; background-color:transparent; text-decoration:none}
+	a:visited {color:pink; background-color:transparent; text-decoration:none}
+	a:hover   {color:blue; background-color:transparent; text-decoration:underline}
+	a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+</style>
+
+
+<script type="text/javascript">
+        function Clear() {
+                document.getElementById("di").value = "";
+                document.getElementById("Tri").value = "";
+                document.getElementById("Tetra").value = "";               
+		document.getElementById("Penta").value = "";	
+                document.getElementById("Hexa").value = "";				
+            }
+
+        function Default() {
+                document.getElementById("di").value = "6";
+                document.getElementById("Tri").value = "5";
+                document.getElementById("Tetra").value = "5";               
+		document.getElementById("Penta").value = "4";	
+                document.getElementById("Hexa").value = "4";				
+            }
+            
+    	function Disable() {
+		document.getElementById("sr").disabled = true;
+						}  
+	function undisableBtn() {
+		document.getElementById("sr").disabled = false;
+			}		
+
+</script>
+
+
+
+</head>
+
+<body>
+<div id="wrapper">
+  <header>
+	<table> 
+		<td>
+			<img alt="LsatLogo"   height="120" src="lsatlogo.png" width="121" />
+		</td>
+		<td>
+			Lsat:&nbsp; web-based micro-satellite analysis tool for family Liliaceae 
+		</td> 
+	</table>
+  </header>
+
+
+<table style="width: 100%">
+	<tr>
+		<td id="left" style="width:30%">
+		<form id="SSRParam" action="LsatOut.php" method="get" target="_blank" >
+		  <p> Select data (Sequences) from database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			  <select name="dbname">
+							<option value="LiESTncbi2017">Lily EST NCBI</option>
+							<option value="LiUnigene">Lily nr Unigene</option>
+					  <!--  <option value="fastafile">ZZZZZZZZZ</option>  
+							<option value="TFLI01.fasta">TF Test.</option> ---> 
+			 		  </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+					 
+					  <table>
+
+					  <tr><td> <!-- style="background-color: #FFFF00; width : 350px; padding-left:50px"> -->
+					  Input SSR search parameters:<br> 		
+					  <p>Di-nucleotide repeat:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					  <input type="taxt" id="di" name="di" style="width: 45px" value="6" onclick="undisableBtn()" required> <span id='displaya'><br>
+					  <p>Tri-nucleotide repeat:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="taxt" id="Tri" name="Tri" style="width: 45px" value="5" onclick="undisableBtn()" required> <br> 
+					  <p>Tetra-nucleotide repeat: &nbsp;<input type="taxt" id="Tetra" name="Tetra" style="width: 45px" value="5" onclick="undisableBtn()" required><br> 
+					  <p>Penta-nucleotide repeat:&nbsp;<input type="taxt" id="Penta" name="Penta" style="width: 45px" value="4" onclick="undisableBtn()" required><br> 
+					  <p>Hexa-nucleotide repeat:&nbsp;&nbsp;<input type="taxt" id="Hexa" name="Hexa" style="width: 45px" value="4" onclick="undisableBtn()" required><br>
+					  <p><input type="button" id="cl" value=" Clear " onclick="Clear(); Disable()" >
+					  <input type="button" id="df" value="Default Parameter" onclick="Default(); undisableBtn()"> 
+					  <p>Note: Default SSR search parameter <br>(Repeat Type - Minimum Repeat)<br> Di-6, Tri-5 Tetra-5 Penta-4 Hexa-4 </p>
+					  </td>
+					 <!-- <td style="background-color: #D7D714; width: 350px; padding-left:50px"><p id="demo"></p></td> -->
+					  </tr>
+					  </table>
+					  <input type="submit" id="sr" value=">>>  Start SSR Search  <<<" >
+					  </p>
+			</form>		
+		</td>
+	<!--	<td   style="width: 1%; background-color: green"></td> -->
+		<td id="right" style="width: 30%">
+				<span style="color:#003366; font-size:22px  ">1. Introduction of Lsat:</span><br>
+				<p>Lsat [Liliaceae micro-Satellite Analysis Tool] is  web-based micro-satellite analysis tool for family Liliaceae. 
+				This tool  developed for the identification and characterization of perfect microsatellites from the Lily 
+				transcriptome data. Lsat is user-friendly, easy to use, no programming language knowledge need to use it, 
+				it is totally online based microsatellite analysis tool. This tool provides more in depth analysis of microsatellite 
+				e.g. classify SSR according to Motif length (ClassI>20nt and ClassII=20nt), Motif nucleotide base composition 
+				(AT-rich, GC-rich and AT/GC balance), extract flanking region of the SSR loci  etc. these analytical features are 
+				the unique for this tool compare to others existing Microsatellite analysis tools. 
+
+				<p><span style="color:#003366; font-size:22px">2. Characteristics of the Input data:</span><br><br>
+				<span style="color:red">	2.1 Lily EST NCBI: </span> Collection of 4099  EST sequences of Lilium species from the NCBI.    <br><br>
+				<span style="color:red">	2.2 Lily nr Unigene (Lily non redudant unigene sequence ):</span> 216768 non-redundant lily unigenes  were 
+				generated from the 22 cDNA library sequencing by Illumina sequencing  technology, followed by denovo assembling using Trinity and CAP3. 
+				<a href="http://210.110.86.160/Lidb/Lilidb_libraryInfo.html" target=_blank"> [More details] </a><br><br></td>
+		<td  style="width: 2%"></td>		
+		</tr>
+</table>
+
+
+
+<footer> 
+<table style="width: 100%">
+	<tr>
+	<td  style="width:70%; padding-top:20px">
+	<span style="color:yellow">Cite US: </span>&nbsp; &nbsp; Biswas et al (2018) Lsat:&nbsp; web-based micro-satellite analysis tool for family Liliaceae. http://210.110.86.160/Lsat/Lsat.html	 <br>
+	<span style="color:yellow">Contuct US: </span> mkbcit@ymail.com <br>
+	</td>
+	<td  style="width: 40%">
+	<span style="color:yellow">Useful Link  </span><br><a href="http://210.110.86.160/Lidb/Lilidb_Home.html"> Lili-db </a><br>
+	</td>
+	<td  style="width: 10%">
+	</td>		
+	</tr>
+</table>
+</footer>
+</div>
+
