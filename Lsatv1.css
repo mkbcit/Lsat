@@ -1,0 +1,93 @@
+ /*| 	PROJECT:Lsat CSS 	
+  /*| 	AUTHOR:  Dr. MK Biswas             	
+  /*|   VERSION:    1.0   
+  /*|   FIRST RELEASE: 	26 july 2016  							
+  /*|   COPYRIGHT:  (c) 2016-2021 Dr. Mk Biswas	 
+  /*| 	CONTUCT: mkbcit@gmail.com,   */
+
+html, body { 
+height: 100%; margin: 0; padding: 0; 
+}
+
+#wrapper { 
+	height: 80%;
+	/* background-color:#003366; */
+}
+header { 
+	height: 13%; 
+	background-color:#003366;
+	padding-top:7px;
+	padding-left:230px;
+	font-family: Cambria, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size:32px;
+	font-weight: bold;
+    text-shadow: 0px 2px 3px #555;
+    color:#fff;
+}
+
+footer { 
+	height: 30%; 
+	background-color:#003366;
+	padding-top:7px;
+	padding-left:230px;
+	font-family: Cambria, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size:15px;
+	font-weight: bold;
+    text-shadow: 0px 2px 3px #555;
+    color:#fff;
+}
+
+
+
+#bottom {
+	height: 120px; 
+	background-color:#003366;
+	padding-top:15px;
+	padding-left:120px;
+	font-family: Cambria, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size:15px;
+	font-weight: bold;
+    	text-shadow: 0px 2px 3px #555;
+    	color:#fff;
+
+}
+
+
+#content { 
+	height: 100%; 
+	overflow: hidden; 
+}
+ 
+#left { 
+	 
+	height:550px;
+	padding-left:230px;
+	padding-top:50px;
+	padding-right:2px;
+	/*background-color:#FFFFF0;*/
+	float:left;
+}
+ 
+#right { 
+	 
+	height:550px;
+	padding-top:50px;
+	padding-left:2px;
+	padding-right:100px;
+	float:left;
+	/*float:left;
+	padding-left:25px;
+	
+	background-color:#FFFFF0;
+	float:right;*/
+	font-family: Cambria, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size:16px;
+	text-align: justify;
+		
+	/*overflow:scroll;
+	overflow-y: hidden; // hide vertical
+	overflow-x: hidden; hide horizontal*/
+
+}
+
+#content { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 50px 0; margin: -50px 0; 
