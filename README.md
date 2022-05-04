@@ -1,6 +1,6 @@
 ### Lsat [Liliaceae micro-Satellite Analysis Tool] 
 Introduction: 
-is web-based micro-satellite analysis tool for family Liliaceae. 
+Lsat is web-based micro-satellite analysis tool for family Liliaceae. 
 This tool developed for the identification and characterization of perfect microsatellites from the Lily transcriptome data. 
 Lsat is user-friendly, easy to use, no programming language knowledge need to use it, it is totally online based microsatellite analysis tool. 
 This tool provides more in depth analysis of microsatellite e.g. classify SSR according to Motif length (ClassI>20nt and ClassII=20nt),
