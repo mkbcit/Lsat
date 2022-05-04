@@ -17,3 +17,7 @@ these analytical features are the unique for this tool compare to others existin
 ![image](https://user-images.githubusercontent.com/61458681/166657419-6d69d6af-4368-4309-87e5-3c1ef2b8fbb2.png)
 
 Figure 1.  An overview of LSAT database operational mode for SSR primers selection from the nr (non redundant) databases in the public domains. Description on the input and the output of LSAT with the data processing scripts and features for retrieving SSR for Liliaceae family is shown.
+
+
+### References: 
+Biswas MK, Natarajan S, Biswas D, Nath UK, Park JI, Nou IS. LSAT: Liliaceae Simple Sequences Analysis Tool, a web server. Bioinformation. 2018 Apr 30;14(4):181-182. doi: 10.6026/97320630014181. PMID: 29983488; PMCID: PMC6016758.
