@@ -12,3 +12,4 @@ these analytical features are the unique for this tool compare to others existin
 
 2.2 Lily nr Unigene (Lily non redudant unigene sequence ): 216768 non-redundant lily unigenes were generated from the 22 cDNA library sequencing by Illumina sequencing technology, followed by denovo assembling using Trinity and CAP3.
 
+![image](https://user-images.githubusercontent.com/61458681/166657419-6d69d6af-4368-4309-87e5-3c1ef2b8fbb2.png)
